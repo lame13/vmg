@@ -1,8 +1,6 @@
 import style from './Header.module.scss';
 import logoSvg from './assets/logo.svg';
 import { HeaderLinks } from './links';
-import signupSvg from './assets/signupSvg';
-import loginSvg from './assets/loginSvg';
 import { useMediaQuery } from 'usehooks-ts';
 import { useState } from 'react';
 
@@ -41,24 +39,6 @@ const Header = () => {
                     isBurgerOpen ? style.open : ''
                   }`}
                 >
-                  <a
-                    target='_blank'
-                    rel='noreferrer'
-                    href='https://portal.vymediagroup.com/login'
-                    className={style.headerBody__btn}
-                  >
-                    {loginSvg}
-                    Log In
-                  </a>
-                  <a
-                    target='_blank'
-                    rel='noreferrer'
-                    href='https://portal.vymediagroup.com/affiliate/signup'
-                    className={style.headerBody__btn}
-                  >
-                    {signupSvg}
-                    Sign Up
-                  </a>
                   {HeaderLinks.map((item, index) => (
                     <div
                       onClick={() => toSection(item.to)}
@@ -83,26 +63,6 @@ const Header = () => {
                     {item.name}
                   </div>
                 ))}
-              </div>
-              <div className={style.headerBody__btns}>
-                <a
-                  target='_blank'
-                  rel='noreferrer'
-                  href='https://portal.vymediagroup.com/affiliate/signup'
-                  className={style.headerBody__btnsItem}
-                >
-                  {signupSvg}
-                  Sign Up
-                </a>
-                <a
-                  target='_blank'
-                  rel='noreferrer'
-                  href='https://portal.vymediagroup.com/login'
-                  className={style.headerBody__btnsItem}
-                >
-                  {loginSvg}
-                  Log In
-                </a>
               </div>
             </>
           )}

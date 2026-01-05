@@ -1,5 +1,4 @@
 import AdvantagesCard from '../../components/AdvantagesCard';
-import Button from '../../components/Button';
 import SectionTitle from '../../components/SectionTitle';
 import style from './Affilates.module.scss';
 import { AffilatesContent } from './content';
@@ -41,15 +40,6 @@ const AffilatesSection = () => {
               />
             ))}
           </div>
-        </Fade>
-        <Fade bottom>
-          <Button
-            target='_blank'
-            rel='noreferrer'
-            href='https://portal.vymediagroup.com/affiliate/signup'
-            className={style.affilates__btn}
-            title={'Sign Up As An Affiliate Today'}
-          />
         </Fade>
       </div>
     </section>

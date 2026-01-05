@@ -71,7 +71,7 @@ const Footer = () => {
           ))}
         </div>
         <div className={style.footer__cr}>
-          <Fade cascade>VMG © 2023</Fade>
+          <Fade cascade>VMG © 2025</Fade>
         </div>
       </div>
     </footer>

@@ -1,6 +1,5 @@
 import { Fade } from 'react-reveal';
 import AdvantagesCard from '../../components/AdvantagesCard';
-import Button from '../../components/Button';
 import SectionTitle from '../../components/SectionTitle';
 import style from './Adverisers.module.scss';
 import { AdverisersContent } from './content';
@@ -23,15 +22,6 @@ const AdverisersSection = () => {
             />
           ))}
         </div>
-        <Fade bottom>
-          <Button
-            target='_blank'
-            rel='noreferrer'
-            href='https://portal.vymediagroup.com/advertiser/signup'
-            className={style.adverisers__btn}
-            title={'Sign Up As An Adverstiser Today'}
-          />
-        </Fade>
       </div>
     </section>
   );

@@ -1,5 +1,4 @@
 import SectionTitle from '../../components/SectionTitle';
-import Button from '../../components/Button';
 import style from './Main.module.scss';
 import bg from './assets/bg.png';
 import bg2x from './assets/bg@2x.png';
@@ -40,16 +39,6 @@ const MainSection = () => {
                 <Fade bottom>Less Than Excellence</Fade>
               </span>
             </div>
-            <Fade bottom>
-              <Button
-                target='_blank'
-                rel='noreferrer'
-                href='https://portal.vymediagroup.com/affiliate/signup'
-                className={style.mainBody__btn}
-                title='Become an Affiliate'
-              />
-            </Fade>
-
             <div className={style.mainBody__img}>
               <Fade right>
                 <img src={img} srcSet={`${img} 1x, ${img2x} 2x`} alt='' />
